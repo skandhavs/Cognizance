@@ -1,0 +1,46 @@
+THERE ARE TWO WAYS TO SOLVE THIS UNDER THE GIVEN CONSTRAINTS
+This program will allow the user to check if the number is divisible by 3
+_______________________________________________________________________________
+FIRST WAY
+Intialize n (The no.), q (quotient) and rsp (response) 
+DO
+	print
+		"ENTER THE NUMBER"
+	INPUT n
+	q = n/3
+	IF "(q * 3) - n == 0"
+		print response
+			"TRUE"
+	ELSE
+		print response
+			"FALSE"
+	END IF-ELSE
+	print 
+		"If you want to find if another number is divisible by 3 enter yes or else no"
+	INPUT rsp
+WHILE " rsp == yes "
+
+__________________________________________________________________________________
+SECOND WAY
+Intialize n (The no.),sd (sum of digits) and rsp (response)
+DO
+	SET sd = 0
+	print
+		"ENTER THE NUMBER "
+	INPUT n
+	WHILE " n > 0 "
+		sd = sd + n % 10
+		n = n/10
+	END WHILE
+	IF "sd % 3 == 0 "
+		print response
+			"TRUE"
+	ELSE
+		print response
+			"FALSE"
+	END IF-ELSE
+	print 
+		"If you want to find if another number is divisible by 3 enter yes or else no"
+	INPUT rsp
+WHILE " rsp == yes "
+_____________________________________________________________________________________

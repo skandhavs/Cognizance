@@ -1,0 +1,29 @@
+This is a program to find the n th number in the fibonacci sequence
+Initialize n,c (count), a , b and rsp (response) 
+DO
+	SET a = 0
+	SET b = 1
+	print
+		"ENTER THE VALUE OF n TO FIND n th NUMBER IN FIBONACCI SEQUENCE"
+	INPUT n
+	FOR " c = 2 to n "          <<count from 2 because 0 and 1 are already known(a and b initially)>>
+		IF " c % 2 == 0 "
+			a = a + b
+		ELSE
+			b = a + b
+		END IF-ELSE
+		c = c + 1
+	END FOR
+	IF " n % 2 == 0 "
+		print a
+	ELSE
+		print b	
+	END IF ELSE
+	print
+		"If you want to find another number in fibonacci sequence enter yes or else no"
+	INPUT rsp
+WHILE " rsp == yes "
+
+
+
+ 
