@@ -1,0 +1,20 @@
+import numpy as np
+my_matrix1= [[]]
+a = int(input("Enter size of number of row(s) of first matrix :"))
+b = int(input("Enter size of number of column(s) of first matrix :"))
+print("Enter the elements of the matrix consecutively with spaces rowwise")
+entries_1 = list(map(int, input().split()))
+my_matrix1= np.array(entries_1).reshape(a,b)
+print("The first matrix is ")
+print(my_matrix1)
+my_matrix2= [[]]
+c = int(input("Enter size of number of row(s) of second matrix :"))
+d = int(input("Enter size of number of column(s) of second matrix :"))
+print("Enter the elements of the matrix consecutively with spaces rowwise")
+entries_2 = list(map(int, input().split()))
+my_matrix2 = np.array(entries_2).reshape(c,d)
+print("The second matrix is ")
+print(my_matrix2)
+mul_matrix=np.dot(my_matrix1,my_matrix2)
+print("The multiplication of two matrix is")
+print(mul_matrix)
