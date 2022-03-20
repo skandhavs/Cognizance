@@ -1,0 +1,72 @@
+body{
+    background-image: url(tick-1.png);
+    background-color:whitesmoke;
+    background-size:40px;
+    background-repeat:repeat-x repeat-y;  
+    font-family: 'Fredoka', sans-serif;  
+}
+
+
+#createtask{
+    width:auto;
+    
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    padding:7px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    font-weight:500;
+    
+}
+textarea{
+    resize: none;
+}
+label {
+    vertical-align: middle;
+}
+.create-task-menu{
+    display:none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blueviolet;
+    width:fit-content;
+    padding:20px;
+    background-color: white;
+    height: 260px;
+    justify-content: space-between;
+}
+.float-right{
+    float: right;
+}
+p{
+    margin-block-start: 0%;
+}
+#add-task{
+    font-family: 'Fredoka', sans-serif;
+background-color:white;
+border-style: solid;
+border-radius: 7px;
+border-color: gray;
+padding-left: 8px;
+padding-right: 8px;
+padding-top: 5px;
+padding-bottom: 5px;
+font-weight: 500;
+}
+ button:hover{
+    background-color: gray;
+
+}
+#add-task:hover{
+    background-color: gray;
+}
+.make-visible{
+    display:block;
+}
+.noob{
+    display:none;
+}
+
+
